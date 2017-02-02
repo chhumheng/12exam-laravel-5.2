@@ -1,0 +1,13 @@
+{
+  "name": "jscalendar",
+  "homepage": "https://github.com/virasak/jscalendar",
+  "_release": "8c51b8576f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8c51b8576ffe9ef0e6b9d2367b38a3c82962f6c9"
+  },
+  "_source": "https://github.com/virasak/jscalendar.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/virasak/jscalendar.git"
+}
