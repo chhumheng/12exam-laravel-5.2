@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('layouts/login');
 });
+
+Route::get('/c', function () {
+    return view('layouts/child');
+});

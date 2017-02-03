@@ -1,13 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{--<meta name="csrf-token" content="{{ csrf_token() }}">--}}
-    {{--@include('includes._google_crawl')--}}
-    {{--<link rel="shortcut icon" href="/favicon.png">--}}
-    <title>@yield('title')</title>
+    <link href="{{ URL::asset('css/login.css') }}" rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap -->
     <link href="{{ URL::asset('lib/bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel='stylesheet' type='text/css'>
@@ -30,81 +24,37 @@
 
 </head>
 <body>
+<div class="conntainner-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2 align="center">Login Form</h2>
 
+            <form action="action_page.php">
+                <div class="imgcontainer">
+                    {{--<img src="img_avatar2.png" alt="Avatar" class="avatar">--}}
+                    <img src="{{ URL::asset('images/img_avatar2.png') }}" alt="Avatar" class="avatar">
+                </div>
 
-<div class="row">
-    <div class="col-md-5 col-md-offset-4">
-        <div class="col-md-12 text-center">
-            <br/>
-            <h3><b>Login</b></h3>
-            <br/>
+                <div class="login-pading">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+
+                <div class="login-pading" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
         </div>
-        @if (Session::has('flash_notification.message'))
-            <div class="row">
-                <div class="text-center col-md-10 col-md-offset-1">
-                    @include('flash::message')
-                </div>
-            </div>
-        @endif
-        <form class="form-horizontal" role="form" method="POST">
-            {!! csrf_field() !!}
-            <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
-                <label class="col-md-10 col-md-offset-1">
-                    {{ trans('text_lang.email') }} <span class="requredStar">***</span>
-                </label>
-
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="right-inner-addon">
-                        <i class="glyphicon glyphicon-envelope"></i>
-                        <input type="email" class="form-control" name="email" value="{{ old('email') }}">
-                    </div>
-                    @if ($errors->has('email'))
-                        <span class="help-block">
-                                <strong>{!! $errors->first('email')  !!}</strong>
-                            </span>
-                    @endif
-                </div>
-            </div>
-
-            <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
-                <label class="col-md-10 col-md-offset-1">
-                    {{ trans('text_lang.password') }} <span class="requredStar">***</span>
-                </label>
-
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="right-inner-addon">
-                        <i class="glyphicon glyphicon-lock"></i>
-                        <input type="password" class="form-control" name="password">
-                    </div>
-                    @if ($errors->has('password'))
-                        <span class="help-block">
-                                <strong>{!! $errors->first('password')  !!}</strong>
-                            </span>
-                    @endif
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-10 col-md-offset-1">
-                    <button type="submit" class="btn btn-primary  btn-block">
-                        {{ trans('text_lang.loginAsEmployer') }}
-                    </button>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-7 col-md-offset-1">
-                    <em class="requredStar"><b>{{ trans('text_lang.noteStar') }}</b> {{ trans('text_lang.descriptionNotesRequired') }}</em>
-                </div>
-            </div>
-        </form>
+        <div class="col-md-4"></div>
     </div>
 </div>
-
-
-@include('../includes._footer')
-
-@yield('extraJS')
-
 </body>
 </html>

@@ -30,6 +30,9 @@
 
 </head>
 <body>
+<div class="container-fluid">
+    @yield('content')
+</div>
     {{--<nav></nav>--}}
     {{--@yield('breadcrumbs')--}}
 
