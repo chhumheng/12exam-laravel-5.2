@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top: 200px">
   All Rights Reserved by 12Exam.COM
 </div>
 

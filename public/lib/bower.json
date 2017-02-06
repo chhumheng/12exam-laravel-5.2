@@ -17,11 +17,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.7",
-    "font-awesome": "~4.7.0",
-    "normalize-css": "normalize.css#~5.0.0",
-    "jquery-ui": "jquery.ui#^1.12.1",
-    "jscalendar": "https://github.com/virasak/jscalendar.git",
-    "flag-icon-css": "https://github.com/lipis/flag-icon-css.git"
+//    "bootstrap": "~3.3.7",
+//    "font-awesome": "~4.7.0",
+//    "normalize-css": "normalize.css#~5.0.0",
+//    "jquery-ui": "jquery.ui#^1.12.1",
+//    "jscalendar": "https://github.com/virasak/jscalendar.git",
+//    "flag-icon-css": "https://github.com/lipis/flag-icon-css.git"
   }
 }

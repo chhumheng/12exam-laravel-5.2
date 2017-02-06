@@ -1,5 +1,5 @@
 form {
-    border: 3px solid #f1f1f1;
+    border: 2px solid #f1f1f1;
 }
 
 input[type=text], input[type=password] {
@@ -33,7 +33,7 @@ button {
 }
 
 img.avatar {
-    width: 25%;
+    width: 30%;
     border-radius: 50%;
 }
 
