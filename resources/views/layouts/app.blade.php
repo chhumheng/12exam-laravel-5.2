@@ -25,7 +25,7 @@
     <link href="{{ URL::asset('css/index.css') }}" rel='stylesheet' type='text/css'>
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top nav-background">
 
         <div class="container">
             <div class="navbar-header">
@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/account') }}">Account</a></li>
+                    <li><a href="{{ url('/test') }}">Test</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

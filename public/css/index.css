@@ -5,6 +5,24 @@ body {
 .fa-btn {
     margin-right: 6px;
 }
+/*.nav-background{*/
+    /*background-color: #056784;*/
+    /*border-bottom: 2px solid #03A9F5;*/
+/*}*/
+/*.li > a{*/
+    /*color: #FAFAFA; !important;*/
+/*}*/
+
 .margin-top-under-fixed-top{
     margin-top: 70px;
+}
+.main.lms-footer {
+    background-color: #009788;
+    /*background-color: #056784;*/
+}
+footer.main {
+    padding: 15px 0px;
+    border-top: 2px solid #F79811;
+    background-color: #056784;
+    color: #fff;
 }

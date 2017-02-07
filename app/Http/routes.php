@@ -14,7 +14,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/', 'HomeController@index');
-    Route::get('/account', 'AccountController@index');
+    Route::get('/test', 'TestController@index');
+
+    Route::get('/student/course', function (){
+        return view('accounts/course');
+    } );
 
 
 
