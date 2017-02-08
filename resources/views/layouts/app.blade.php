@@ -90,5 +90,6 @@
     <script src="{{ URL::asset('lib/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     @yield('extraJS')
 
+
 </body>
 </html>

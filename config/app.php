@@ -149,9 +149,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
 //        Zizaco\Entrust\EntrustServiceProvider::class,
-//        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        'Laracasts\Flash\FlashServiceProvider',
+        Laracasts\Flash\FlashServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
 
         /*
@@ -211,7 +210,6 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
 //        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
-//        'LaravelLocalization'   => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,

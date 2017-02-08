@@ -20,6 +20,8 @@ Route::group(['middleware' => 'web'], function () {
         return view('accounts/course');
     } );
 
+//    Route::get('/country', 'CountryController@index');
+    Route::resource('/country', 'CountryController');
 
 
 
