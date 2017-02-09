@@ -26,3 +26,15 @@ footer.main {
     background-color: #056784;
     color: #fff;
 }
+.text-color-white{
+    color: #FFFFFF;
+}
+.panel-green{
+    background-color: #5CB85C; !important;
+}
+.panel-yellow{
+    background-color: #F0AD4E; !important;
+}
+.panel-red{
+    background-color: #D9534F; !important;
+}

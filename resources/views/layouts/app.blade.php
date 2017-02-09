@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{--<meta name="csrf-token" content="{{ csrf_token() }}">--}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     {{--@include('includes._google_crawl')--}}
     {{--<link rel="shortcut icon" href="/favicon.png">--}}
     <title>@yield('title')</title>
@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/test') }}">Test</a></li>
+                    <li><a href="{{ url('/account') }}">Dashboard</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -73,14 +73,6 @@
     </nav>
     <div class="margin-top-under-fixed-top"></div>
     @yield('content')
-
-
-
-
-
-
-
-
 
 
     @include('../includes._footer')

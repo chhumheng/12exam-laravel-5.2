@@ -4,13 +4,39 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        //Inser data to roles
+        DB::table('roles')->insert([
+            'name' => 'admin',
+            'display_name' => 'Administrator',
+            'description' => '',
+            'created_at' => '2017-02-05 00:54:19',
+            'updated_at' => '2017-02-05 00:54:19',
+        ]);
+
+        DB::table('roles')->insert([
+            'name' => 'parents',
+            'display_name' => 'Parents of child',
+            'description' => '',
+            'created_at' => '2017-02-05 00:54:19',
+            'updated_at' => '2017-02-05 00:54:19',
+        ]);
+
+        //Insert data to Users
+        DB::table('Users')->insert([
+            'name' => 'Amin',
+            'gender' => 'male',
+            'phone' => '015204520',
+            'email' => 'chhumheng2014@gmail.com',
+            'password' => '123456',
+            'address' => 'bb',
+            'role' => '1',
+            'status' => '1',
+        ]);
+
+
+        //$this->call(UsersTableSeeder::class);
     }
 }

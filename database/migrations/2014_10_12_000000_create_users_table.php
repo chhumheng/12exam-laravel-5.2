@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             //add column more
             $table->string('address');
             //$table->string('role');
+            $table->boolean('role')->default(0);
             $table->boolean('status')->default(0);
 
             $table->rememberToken();

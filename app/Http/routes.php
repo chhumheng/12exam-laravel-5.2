@@ -4,17 +4,23 @@
 //{
     Route::group(['middleware' => 'web'], function () {
         Route::auth();
+        Route::get('/', function (){ return view('home'); });
+        Route::get('/student/course', function (){ return view('accounts/students/dashboard'); });
+        Route::group(['prefix' => 'account'], function () {
+            Route::get('/', 'AccountController@account');
 
-        Route::get('/', 'HomeController@index');
-        Route::get('/test', 'TestController@index');
+        });
 
-        Route::get('/student/course', function (){
-            return view('accounts/course');
-        } );
-
-//    Route::get('/country', 'CountryController@index');
+        //    Route::get('/country', 'CountryController@index');
         Route::resource('/country', 'CountryController');
-        ;
+
+
+
+
+
+
+
+
 
         Route::get('/mail',function(){
             dd(Config::get('mail'));
@@ -27,23 +33,6 @@
         } );
 
 
-//============ authentication ===========
-        //Route::auth();
-        //OR
-
-        // Authentication Routes...
-//    $this->get('login', 'Auth\AuthController@showLoginForm');
-//    $this->post('login', 'Auth\AuthController@login');
-//    $this->get('logout', 'Auth\AuthController@logout');
-//
-//// Registration Routes...
-//    $this->get('register', 'Auth\AuthController@showRegistrationForm');
-//    $this->post('register', 'Auth\AuthController@register');
-//
-//// Password Reset Routes...
-//    $this->get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
-//    $this->post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
-//    $this->post('password/reset', 'Auth\PasswordController@reset');
     });
 // #end middleware
 
