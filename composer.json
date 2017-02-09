@@ -7,13 +7,13 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-
+        "mcamara/laravel-localization": "1.2.*",
         "laravel/socialite": "^2.0",
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "maatwebsite/excel": "~2.1.0",
         "laravelcollective/html": "^5.2.0",
-        "laracasts/flash": "^2.0",
-        "mcamara/laravel-localization": "1.2.*"
+        "laracasts/flash": "^2.0"
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

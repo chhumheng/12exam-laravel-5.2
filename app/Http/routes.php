@@ -1,65 +1,37 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
+//Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+//{
+    Route::group(['middleware' => 'web'], function () {
+        Route::auth();
 
-    Route::get('/', 'HomeController@index');
-    Route::get('/test', 'TestController@index');
+        Route::get('/', 'HomeController@index');
+        Route::get('/test', 'TestController@index');
 
-    Route::get('/student/course', function (){
-        return view('accounts/course');
-    } );
+        Route::get('/student/course', function (){
+            return view('accounts/course');
+        } );
 
 //    Route::get('/country', 'CountryController@index');
-    Route::resource('/country', 'CountryController');
+        Route::resource('/country', 'CountryController');
+        ;
 
-
-
-
-    //Mail
-//    Route::get('/sendMail', 'MailController@sentMail');
-
-    Route::get('/mail',function(){
-        dd(Config::get('mail'));
+        Route::get('/mail',function(){
+            dd(Config::get('mail'));
 //        return "Hi! mail testing ........ !!!!!";
 
 //        Mail::send('template/mail/festival/test', ['user' => 'Tasol Solution Pvt Ltd'], function($m){
 //            $m->to('chhumheng2014@gmail.com', 'CHHUM Heng')->subject('Testing mail!!!');
 //        });
 //        return "successfully mail send";
-    } );
+        } );
 
-
-
-
-
-
-
-//    Route::get('/', 'HomeController@index');
-
-//    Route::get('/', function () {
-//        return view('login');
-//    });
-//
-//    Route::get('/c', function () {
-//        return view('layouts/child');
-//    });
 
 //============ authentication ===========
-    //Route::auth();
-    //OR
+        //Route::auth();
+        //OR
 
-    // Authentication Routes...
+        // Authentication Routes...
 //    $this->get('login', 'Auth\AuthController@showLoginForm');
 //    $this->post('login', 'Auth\AuthController@login');
 //    $this->get('logout', 'Auth\AuthController@logout');
@@ -72,7 +44,7 @@ Route::group(['middleware' => 'web'], function () {
 //    $this->get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
 //    $this->post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
 //    $this->post('password/reset', 'Auth\PasswordController@reset');
+    });
+// #end middleware
 
-
-
-});
+//});
