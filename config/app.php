@@ -211,8 +211,6 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Flash' => 'Laracasts\Flash\Flash',
         'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
-
-
     ],
 
 ];

@@ -32,7 +32,7 @@ composer update
 
 ## Database
 ```file
-    create database name: 12exam
+   create database name --> 12exam
 ```
 
 ```file
