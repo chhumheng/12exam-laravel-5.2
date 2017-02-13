@@ -1,16 +1,18 @@
 # Installation Method
-- Clone this repository
+- Clone this repository ==> git clone https://github.com/henggithub/12exam.git
 - Install Composer (if already install skip this step)
-- Use Composer to install component
-- Import Database to your local development
+- Use Composer to install component 
+    ==> composer install
+    ==> composer update
+- Create database name: 12exam
+- database setup/ config database ==> https://tutorials.kode-blog.com/laravel-install-and-configure
 
 # Command Line used
 
 ## Clone repository
 ```sh
-git clone {git-url} {directory}
+git clone https://github.com/henggithub/12exam.git
 ```
-* use without {}
 
 ## Composer
 ### Installation
@@ -24,11 +26,23 @@ https://getcomposer.org/
 ```sh
 composer install
 ```
-
-## Import Database
-```file
-bongpheakdb.sql
+```sh
+composer update
 ```
+
+## Database
+```file
+    create database name: 12exam
+```
+
+```file
+   php artisan migrate
+```
+
+```file
+    seed 
+```
+
 
 ## Configure your enviroment
 * Duplicate the file '.env.example' and rename it to '.env'
