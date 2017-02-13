@@ -26,23 +26,6 @@ https://getcomposer.org/
 ```sh
 composer install
 ```
-```sh
-composer update
-```
-
-## Database
-```file
-   create database name --> 12exam
-```
-
-```file
-   php artisan migrate
-```
-
-```file
-    php artisan db:seed --class=DatabaseSeeder
-```
-
 
 ## Configure your enviroment
 * Duplicate the file '.env.example' and rename it to '.env'
@@ -55,7 +38,20 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Best regart,
+## Database
+
+Create database name: 12exam
+
+```file
+   php artisan migrate
+```
+
+```file
+    php artisan db:seed --class=DatabaseSeeder
+```
+
+
+Best regard,
 CHHUM Heng!
 
 # Done!!! Test your project
