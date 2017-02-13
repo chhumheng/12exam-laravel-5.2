@@ -1,27 +1,44 @@
-# Laravel PHP Framework
+# Installation Method
+- Clone this repository
+- Install Composer (if already install skip this step)
+- Use Composer to install component
+- Import Database to your local development
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+# Command Line used
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Clone repository
+```sh
+git clone {git-url} {directory}
+```
+* use without {}
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Composer
+### Installation
 
-## Official Documentation
+Download Composer from here
+```url
+https://getcomposer.org/
+```
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### Install Dependencies
+```sh
+composer install
+```
 
-## Contributing
+## Import Database
+```file
+bongpheakdb.sql
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Configure your enviroment
+* Duplicate the file '.env.example' and rename it to '.env'
+```sh
+cp .env.example .env
+```
+* Edit ur Database connection in '.env' file
+* Generate new APP_KEY
+```sh
+php artisan key:generate
+```
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+# Done!!! Test your project
