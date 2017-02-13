@@ -15,7 +15,9 @@ class CreateQuizTable extends Migration
             $table->string('quizsName', 100);
             $table->string('quizsDescription', 100);
             $table->integer('quizsTotalScore');
-            $table->string('quizsDuration', 100);  //???
+            $table->tinyInteger('quizsHour');
+            $table->tinyInteger('quizsMinute');
+
             $table->integer('quizsYear');  //8
 
             $table->boolean('quizsStatus')->default(0);

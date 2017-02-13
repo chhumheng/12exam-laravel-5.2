@@ -8,11 +8,18 @@
         Route::get('/student/course', function (){ return view('accounts/students/dashboard'); });
         Route::group(['prefix' => 'account'], function () {
             Route::get('/', 'AccountController@account');
+            Route::resource('/school', 'SchoolController');
+            Route::resource('/subject', 'SubjectController');
+            Route::resource('/subsubject', 'SubjectController');
+            Route::resource('/quiz', 'QuizController');
 
+            Route::resource('country', 'CountryController');
+//            Route::post('/country/create', 'CountryController@store');
+
+//            Route::get('/country/{id}/edit', 'CountryController@edit');
         });
 
         //    Route::get('/country', 'CountryController@index');
-        Route::resource('/country', 'CountryController');
 
 
 
