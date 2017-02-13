@@ -40,7 +40,7 @@ composer update
 ```
 
 ```file
-    seed 
+    php artisan db:seed --class=DatabaseSeeder
 ```
 
 
@@ -55,4 +55,10 @@ cp .env.example .env
 php artisan key:generate
 ```
 
+Best regart,
+CHHUM Heng!
+
 # Done!!! Test your project
+    login Admin:
+    user name: amin
+    password: 123456
