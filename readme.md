@@ -51,11 +51,10 @@ Create database name: 12exam
 ```
 
 
-Best regart,
-
+Best regard,
 CHHUM Heng!
 
 # Done!!! Test your project
     login Admin:
-    user name: amin
+    user name: admin
     password: 123456
