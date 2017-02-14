@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
             'gender' => 'male',
             'phone' => '015204520',
             'email' => 'admin@gmail.com',
-            'password' => '123456',
+            'password' => '$2y$10$EEw0J2zoOr4UrJRq.zyqE.m4NZSNciZErHWr5LZr1MFjpW1yyWjmO',
             'address' => 'bb',
             'role' => '1',
             'status' => '1',
